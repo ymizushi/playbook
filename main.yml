@@ -1,0 +1,7 @@
+# ubuntuでの共通設定を適用します.
+- name: apply common configuration to all nodes
+  hosts: all
+  user: ymizushi
+  roles:
+    - role: setup
+    # - role: common-packages

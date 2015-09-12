@@ -1,0 +1,14 @@
+- name: install common packages
+  sudo: yes
+  apt: pkg={{ item }} state=latest
+  with_items:
+  - build-essential
+  - ssh
+  - git
+  - vim
+  - zsh
+  - tmux
+  - tig
+  - ctags
+  - silversearcher-ag
+  tags: common-packages
